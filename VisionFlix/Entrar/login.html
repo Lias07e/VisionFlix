@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login - VisionFlix</title>
+  <link rel="stylesheet" href="../css/login.css" />
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <script src="../script.js" defer></script>
+</head>
+<body>
+
+ <!-- Menu -->
+ <header>
+  <nav class="navbar">
+    <!-- Logo -->
+    <div class="logo">
+      <a href="../index.html"><img src="../imagens/VisionFlix.svg" alt="Logo" /></a>
+    </div>
+
+    <!-- Botão Hamburguer -->
+    <button class="menu-toggle" id="menu-toggle">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <!-- Lista de links -->
+    <ul class="nav-list" id="nav-list">
+      <li class="home">
+        <a href="../index.html"><i class="fa-solid fa-house"></i> Início</a>
+      </li>
+      <li><a href="../filmes.html"><i class="fa-solid fa-film"></i> Filmes</a></li>
+      <li><a href="../series.html"><i class="fa-solid fa-tv"></i> Séries</a></li>
+      <li><a href="../planos/mensal.html"><i class="fa-solid fa-money-bill"></i> Preços</a></li>
+      <li>
+        <a href="Entrar/login.html">
+          <button class="btn"><i class="fa-solid fa-right-to-bracket"></i> ENTRAR</button>
+        </a>
+      </li>
+    </ul>
+
+    <!-- Barra de pesquisa -->
+    <div class="search-bar" id="search-bar">
+      <input type="text" placeholder="Buscar filmes ou séries..." />
+      <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+  </nav>
+</header>
+
+  <!-- Login centralizado -->
+  <main>
+    <div class="login-wrapper">
+      <div class="container">
+        <form>
+          <h1>Login</h1>
+          <div class="input-box">
+            <input placeholder="Usuário" type="text" />
+            <i class="fa-solid fa-user"></i>
+          </div>
+          <div class="input-box">
+            <input placeholder="Senha" type="password" />
+            <i class="fa-solid fa-lock"></i>
+          </div>
+          <div class="remember-forgot">
+            <label>
+              <input type="checkbox" />
+              Lembrar Senha
+            </label>
+            <a href="#">Esqueci a Senha</a>
+          </div>
+          <a href="../index.html">
+            <button type="button" class="button-login">Login</button>
+          </a>
+          <div class="Register-link">
+            <p>Não tem uma conta? <a href="#">Cadastra-se</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="main">
+      <div class="footer-top">
+        <nav>
+          <div class="logo">
+            <img src="../imagens/VisionFlix.svg" alt="" />
+          </div>
+          <ul class="list">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../filmes.html">Filmes</a></li>
+            <li><a href="../series.html">Séries</a></li>
+            <li><a href="">Preços</a></li>
+          </ul>
+        </nav>
+        <hr />
+        <div class="links">
+          <div class="text-links">
+            <a href="#">Central de Ajuda</a>
+            <a href="#">Termos de Uso</a>
+            <a href="#">Privacidade</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="copyright">
+          <p>&#169; 2025 <a href="">VisionFlix</a>. Todos Direitos reservados.</p>
+        </div>
+        <div class="img">
+          <img src="images/footer-bottom-img.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

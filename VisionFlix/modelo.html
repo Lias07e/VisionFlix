@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes - VisionFlix</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+ 
+  
+<!-- Menu -->
+<header>
+  <nav class="navbar">
+    <!-- Logo -->
+    <div class="logo">
+      <a href=""><img src="imagens/VisionFlix.svg" alt="Logo" /></a>
+    </div>
+
+    <!-- Botão Hamburguer -->
+    <button class="menu-toggle" id="menu-toggle">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <!-- Lista de links -->
+    <ul class="nav-list" id="nav-list">
+      <li class="home">
+        <a href="./index.html"><i class="fa-solid fa-house"></i> Início</a>
+      </li>
+      <li><a href="./filmes.html"><i class="fa-solid fa-film"></i> Filmes</a></li>
+      <li><a href="./series.html"><i class="fa-solid fa-tv"></i> Séries</a></li>
+      <li><a href="./planos/mensal.html"><i class="fa-solid fa-money-bill"></i> Preços</a></li>
+      <li>
+        <a href="Entrar/login.html">
+          <button class="btn"><i class="fa-solid fa-right-to-bracket"></i> ENTRAR</button>
+        </a>
+      </li>
+    </ul>
+
+    <!-- Barra de pesquisa -->
+    <div class="search-bar" id="search-bar">
+      <input type="text" placeholder="Buscar filmes ou séries..." />
+      <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+  </nav>
+</header>
+<section class="modelo">
+    <div class="imagem">
+      <img src="./imagens/movie-1.png" alt="Sonic 2" />
+    </div>
+    <div class="content">
+      <h1>Sonic 2</h1>
+      <div class="info">2022 • 2h 2min • Aventura, Comédia, Família</div>
+      <div class="info">Diretor: Jeff Fowler</div>
+      <div class="info">Elenco: Jam Carrey, Ben Schwartz, James Marsden </div>
+      <div class="buttons">
+        <a href="https://youtu.be/A2SjVRziC7M" class="btn-trailer"
+          >▶ Trailer</a
+        >
+        <a href="" class="btn-add">+ Minha Lista</a>
+      </div>
+      <div class="description">
+        Sonic retorna para uma nova aventura cheia de ação e comédia. Depois
+        de se estabelecer em Green Hills, o ouriço azul precisa provar que tem
+        o que é preciso para ser um verdadeiro herói. Sua chance chega quando
+        Dr. Robotnik retorna com o poderoso Knuckles em busca de uma esmeralda
+        capaz de destruir civilizações. Junto de seu novo amigo Tails, Sonic
+        embarca em uma jornada pelo mundo para salvar o planeta dessa ameaça.
+      </div>
+    </div>
+  </section>
+
+  <!-- comentários -->
+
+  <section class="comentarios">
+  <h2>Comentários</h2>
+  <p class="login-aviso">Entre na sua conta para fazer comentários!</p>
+
+  <div class="comentario-form">
+    <textarea placeholder="Escreva um comentário" disabled></textarea>
+    <button class="btn-comentar" disabled>
+      <i class="fa-regular fa-comment"></i> Comentar
+    </button>
+  </div>
+
+  <div class="comentarios-lista">
+    <p class="sem-comentarios">Não há comentários no momento.</p>
+  </div>
+</section>
+
+<!-- footer Rodapé -->
+<footer>
+    <div class="main">
+      <div class="footer-top">
+        <nav>
+          <div class="logo">
+            <img src="imagens/VisionFlix.svg" alt="">
+          </div>
+          <ul class="list">
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./filmes.html">Filmes</a></li>
+            <li><a href="./series.html">Séries</a></li>
+            <li><a href="./planos/mensal.html">Preços</a></li>
+            
+          </ul>
+        </nav>
+        <hr>
+        <div class="links">
+          <div class="text-links">
+            <a href="#">Central de Ajuda</a>
+            <a href="#">Termos de Uso</a>
+            <a href="#">Privacidade</a>
+          </div>
+      
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="copyright">
+          <p>&#169; 2025 <a href="#">VisionFlix</a>. Todos Direitos reservados.</p>
+        </div>
+        
+        <div class="img">
+          <img src="images/footer-bottom-img.png" alt="">
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  </body>

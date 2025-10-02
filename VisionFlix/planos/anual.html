@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/plano.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="../script.js" defer></script>
+    <title>Anual - VisionFlix</title>
+</head>
+<body>
+    
+<!-- Menu -->
+<header>
+  <nav class="navbar">
+    <!-- Logo -->
+    <div class="logo">
+      <a href="../index.html"><img src="../imagens/VisionFlix.svg" alt="Logo" /></a>
+    </div>
+
+    <!-- Botão Hamburguer -->
+    <button class="menu-toggle" id="menu-toggle">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <!-- Lista de links -->
+    <ul class="nav-list" id="nav-list">
+      <li class="home">
+        <a href="../index.html"><i class="fa-solid fa-house"></i> Início</a>
+      </li>
+      <li><a href="../filmes.html"><i class="fa-solid fa-film"></i> Filmes</a></li>
+      <li><a href="../series.html"><i class="fa-solid fa-tv"></i> Séries</a></li>
+      <li><a href="../planos/mensal.html"><i class="fa-solid fa-money-bill"></i> Preços</a></li>
+      <li>
+        <a href="../Entrar/login.html">
+          <button class="btn"><i class="fa-solid fa-right-to-bracket"></i> ENTRAR</button>
+        </a>
+      </li>
+    </ul>
+
+    <!-- Barra de pesquisa -->
+    <div class="search-bar" id="search-bar">
+      <input type="text" placeholder="Buscar filmes ou séries..." />
+      <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+  </nav>
+</header>
+
+  <section>
+
+    <h1>Escolha o melhor plano para você</h1><br>
+  <div class="agrupar">
+    <a href="../planos/mensal.html" class="btn-plan">
+      <i class="fas fa-calendar-week"></i> Mensal
+    </a>
+    <a href="#" class="btn-plan">
+      <i class="fas fa-calendar-alt"></i> Anual
+    </a>
+  </div>
+  <div class="anual-grid">
+    
+      <div class="card">
+
+        <h2>Plano Bronze – Essencial</h2>
+       <ul> 
+       <li><p>✅ Acesso com anúncios</p></li>
+       <li><p>📺 Qualidade de vídeo: HD (720p)</p></li>
+       <li><p>👤 1 tela simultânea</p></li>
+       <li><p>🔒 Suporte básico</p></li>
+       </ul>
+       <span id="detalhe">--------------------------------</span><br>
+       <h2>R$149,00 <span>/ano</span></h2><br>
+
+        <button>Selecionar</button>
+
+      </div>
+
+      <div class="card">
+
+        <h2>Plano Prata – Intermediário</h2>
+        <ul> 
+          <li><p>🚫 Sem anúncios</p></li>
+          <li><p>📺 Qualidade de vídeo: Full HD (1080p)</p></li>
+          <li><p>📥 Download offline limitado</p></li>
+          <li><p>🛠 Suporte prioritário</p></li>
+        </ul>
+        <span id="detalhe">--------------------------------</span><br>
+        <h2>R$289,00 <span>/ano</span></h2><br>
+
+         <button>Selecionar</button>
+
+      </div>
+
+      <div class="card">
+
+        <h2>Plano Ouro – Premium</h2>
+        <ul> 
+          <li><p>🌟 Sem anúncios</p></li>
+          <li><p>📺 Qualidade de vídeo: Ultra HD / 4K</p></li>
+          <li><p>📥 Download offline ilimitado</p></li>
+          <li><p>🎬 Acesso antecipado a lançamentos</p></li>
+          <li><p>🧑‍💼 Suporte VIP 24h</p></li>
+        </ul>
+        <span id="detalhe">--------------------------------</span><br>
+        <h2>R$479,00 <span>/ano</span></h2><br>
+
+         <button>Selecionar</button>
+
+      </div>
+
+    </div>
+
+  </section><br><br>
+
+  <!-- footer Rodapé -->
+  <footer>
+    <div class="main">
+      <div class="footer-top">
+        <nav>
+          <div class="logo">
+            <img src="../imagens/VisionFlix.svg" alt="">
+          </div>
+          <ul class="list">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../filmes.html">Filmes</a></li>
+            <li><a href="../series.html">Séries</a></li>
+            <li><a href="#">Preços</a></li>
+            
+          </ul>
+        </nav>
+        <hr>
+        <div class="links">
+          <div class="text-links">
+            <a href="#">Central de Ajuda</a>
+            <a href="#">Termos de Uso</a>
+            <a href="#">Privacidade</a>
+          </div>
+      
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="copyright">
+          <p>&#169; 2025 <a href="#">VisionFlix</a>. Todos Direitos reservados.</p>
+        </div>
+        
+        <div class="img">
+          <img src="../images/footer-bottom-img.png" alt="">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+</body>
+</html>

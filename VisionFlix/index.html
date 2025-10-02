@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicial - VisionFlix</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="script.js" defer></script>
+    
+
+    
+</head>
+<body>
+ 
+  
+ <!-- Menu -->
+ <header>
+  <nav class="navbar">
+    <!-- Logo -->
+    <div class="logo">
+      <a href="./index.html"><img src="imagens/VisionFlix.svg" alt="Logo" /></a>
+    </div>
+
+    <!-- Botão Hamburguer -->
+    <button class="menu-toggle" id="menu-toggle">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <!-- Lista de links -->
+    <ul class="nav-list" id="nav-list">
+      <li class="home">
+        <a href=""><i class="fa-solid fa-house"></i> Início</a>
+      </li>
+      <li><a href="./filmes.html"><i class="fa-solid fa-film"></i> Filmes</a></li>
+      <li><a href="./series.html"><i class="fa-solid fa-tv"></i> Séries</a></li>
+      <li><a href="./planos/mensal.html"><i class="fa-solid fa-money-bill"></i> Preços</a></li>
+      <li>
+        <a href="Entrar/login.html">
+          <button class="btn"><i class="fa-solid fa-right-to-bracket"></i> ENTRAR</button>
+        </a>
+      </li>
+    </ul>
+
+    <!-- Barra de pesquisa -->
+    <div class="search-bar" id="search-bar">
+      <input type="text" placeholder="Buscar filmes ou séries..." />
+      <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+  </nav>
+</header>
+
+
+
+
+<!-- Filme destaque com Swiper -->
+<section class="destaque swiper" id="home">
+  <div class="swiper-wrapper">
+    <!-- Slide 1 -->
+    <div class="swiper-slide">
+      <img src="imagens/home1.jpg" alt="Imagem do filme" class="bg-img">
+      <div class="conteudo">
+        <div class="texto">
+          <h2 class="titulo-destaque">
+            <i class="fa-solid fa-clapperboard"></i> Lançamento em Destaque
+          </h2>
+          <h1>Venom: Let There <br> Be Carnage</h1>
+          <a href="https://youtu.be/72fjFzUHWPc?si=Nf9gPeP3zMy0yNJl" target="_blank" class="btn">Assista Agora</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="swiper-slide">
+      <img src="imagens/home2.jpg" alt="Imagem do filme" class="bg-img">
+      <div class="conteudo">
+        <div class="texto">
+          <h2 class="titulo-destaque">
+            <i class="fa-solid fa-clapperboard"></i> Lançamento em Destaque
+          </h2>
+          <h1>Joker</h1>
+          <a href="https://youtu.be/zAGVQLHvwOY?si=LbsZg3PhEVx5pFJg" target="_blank" class="btn">Assista Agora</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="swiper-slide">
+      <img src="imagens/home3.jpg" alt="Imagem do filme" class="bg-img">
+      <div class="conteudo">
+        <div class="texto">
+          <h2 class="titulo-destaque">
+            <i class="fa-solid fa-clapperboard"></i> Lançamento em Destaque
+          </h2>
+          <h1>Batman vs Superman</h1>
+          <a href="https://youtu.be/f90lcJnq4gs?si=alpNQrmlNrpsRdgz" target="_blank" class="btn">Assista Agora</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="swiper-pagination"></div>
+</section>
+
+<!-- início Top 3 Filmes -->
+<div class="categorias">
+  <h1 class="recentes">🔥 Top 3 Filmes da Semana</h1>
+</div>
+
+<div class="top3-flex">
+  <div class="top-card">
+    <span class="rank">1</span>
+    <div>
+      <h2>Venom: Let There Be Carnage</h2>
+    </div>
+    <div>
+      <a href="modelo.html">
+        <img src="imagens/Venom2.jpg" alt="Venom Poster">
+      </a>
+    </div>
+    <div>
+      <a href="https://www.tokyvideo.com/video/venom-tempo-de-carnificina-2021-acao-ficcao-cientifica-1h-37m" target="_blank" class="btn-assistir">
+        <span class="fas fa-play"></span> Assistir
+      </a>
+    </div>
+  </div>
+
+  <div class="top-card">
+    <span class="rank">2</span>
+    <div>
+      <h2>Joker</h2>
+    </div>
+    <div>
+      <a href="modelo.html">
+        <img src="imagens/joker.jpg" alt="joker">
+      </a>
+    </div>
+    <div>
+      <a href="https://www.tokyvideo.com/video/coringa-movies-juh" target="_blank" class="btn-assistir">
+        <span class="fas fa-play"></span> Assistir
+      </a>
+    </div>
+  </div>
+
+  <div class="top-card">
+    <span class="rank">3</span>
+    <div>
+      <h2>Batman vs Superman</h2>
+    </div>
+    <div>
+      <a href="modelo.html">
+      <img src="imagens/m3.jpg" alt="Batman Poster">
+      </a>
+    </div>
+    <div>
+      <a href="https://www.tokyvideo.com/br/video/batman-vs-superman-a-origem-da-justica-versao-estendida" target="_blank" class="btn-assistir">
+        <span class="fas fa-play"></span> Assistir
+      </a>
+    </div>
+  </div>
+</div>
+<!-- fim Top 3 Filmes -->
+
+
+  <!-- início elemento -->
+  <div class="categorias">
+    <h1 class="recentes">Filmes Recente</h1>
+  </div>
+  <div class="elementos conteudo-flex">
+    <div class="poster-play">
+      <div>
+        <h2> Spider-Man: Spider-Vers
+        </h2>
+      </div>
+      <div>
+        <a href="modelo.html">
+        <img src="imagens/image14.jpg" alt="imagem modelo poster de filme" title="imagem modelo poster de filme">
+      </a>
+      </div>
+      <div>
+        <a href="https://www.youtube.com/watch?v=g4Hbz2jLxvQ" target="_blank" id="btn-assistir" title="Assistir" class="btn-assistir">
+          <span class="fas fa-play"></span> Assistir
+        </a>
+      </div>
+    </div>
+
+    <div class="poster-play">
+      <div>
+        <h2>The Maze Runner</h2>
+      </div>
+      <div>
+        <a href="modelo.html">
+        <img src="imagens/image2.jpg" alt="imagem modelo poster de filme" title="imagem modelo poster de filme">
+      </a>
+      </div>
+      <div>
+        <a href="https://www.youtube.com/watch?v=uriiz3G8ALw" target="_blank" id="btn-assistir" title="Assistir" class="btn-assistir">
+          <span class="fas fa-play"></span> Assistir
+        </a>
+      </div>
+    </div>
+
+    <div class="poster-play">
+      <div>
+        <h2>It: A Coisa</h2>
+      </div>
+      <div>
+        <a href="modelo.html">
+        <img src="imagens/image35.jpeg" alt="imagem modelo poster de filme" title="imagem modelo poster de filme">
+      </a>
+      </div>
+      <div>
+        <a href="https://www.youtube.com/watch?v=dD264ZjfKlk" target="_blank" id="btn-assistir" title="Assistir" class="btn-assistir">
+          <span class="fas fa-play"></span> Assistir
+        </a>
+      </div>
+    </div>
+
+    <div class="poster-play">
+      <div>
+        <h2>A Origem dos Guardiões</h2>
+      </div>
+      <div>
+        <a href="modelo.html">
+        <img src="imagens/image6.jpg" alt="imagem modelo poster de filme" title="imagem modelo poster de filme">
+      </a>
+      </div>
+      <div>
+        <a href="https://www.youtube.com/watch?v=aPLiBxhoug0" target="_blank" id="btn-assistir" title="Assistir" class="btn-assistir">
+          <span class="fas fa-play"></span> Assistir
+        </a>
+      </div>
+    </div>
+
+    <div class="poster-play">
+      <div>
+        <h2>Deadpool</h2>
+      </div>
+      <div>
+        <a href="modelo.html">
+        <img src="imagens/image9.png" alt="imagem modelo poster de filme" title="imagem modelo poster de filme">
+      </a>
+      </div>
+      <div>
+        <a href="https://www.youtube.com/watch?v=Q9X-bAE8KTc" target="_blank" id="btn-assistir" title="Assistir" class="btn-assistir">
+          <span class="fas fa-play"></span> Assistir
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- fim elemento -->
+<br><br>
+
+
+  <!-- início elemento Series -->
+  <div class="categorias">
+    <h1 class="recentes">Series Recentes</h1>
+  </div>
+  <div class="elementos conteudo-flex">
+    <div class="poster-play">
+      <div>
+        <h2>Brooklyn Nine-Nine</h2>
+      </div>
+      <div>
+        <a href="modelo.html">
+        <img src="imagens/99.jpg" alt="imagem modelo poster de filme" title="imagem modelo poster de filme">
+      </a>
+      </div>
+      <div>
+        <a href="https://www.youtube.com/watch?v=iS5xXr-GOnM" target="_blank" id="btn-assistir" title="Assistir" class="btn-assistir">
+          <span class="fas fa-play"></span> Assistir
+        </a>
+      </div>
+    </div>
+
+    <div class="poster-play">
+      <div>
+        <h2>Moon Knight</h2>
+      </div>
+      <div>
+        <a href="modelo.html">
+        <img src="imagens/series-1.png" alt="imagem modelo poster de filme" title="imagem modelo poster de filme">
+      </a>
+      </div>
+      <div>
+        <a href="https://www.youtube.com/watch?v=x7Krla_UxRg" target="_blank" id="btn-assistir" title="Assistir" class="btn-assistir">
+          <span class="fas fa-play"></span> Assistir
+        </a>
+      </div>
+    </div>
+
+    <div class="poster-play">
+      <div>
+        <h2>Breaking Bad</h2>
+      </div>
+      <div>
+        <a href="modelo.html">
+        <img src="imagens/breaking.jpg" alt="imagem modelo poster de filme" title="imagem modelo poster de filme">
+      </a>
+      </div>
+      <div>
+        <a href="https://bbad.club/" target="_blank" id="btn-assistir" title="Assistir" class="btn-assistir">
+          <span class="fas fa-play"></span> Assistir
+        </a>
+      </div>
+    </div>
+
+    <div class="poster-play">
+      <div>
+        <h2>Game of Thrones</h2>
+      </div>
+      <div>
+        <a href="modelo.html">
+        <img src="imagens/got.jpg" alt="imagem modelo poster de filme" title="imagem modelo poster de filme">
+      </a>
+      </div>
+      <div>
+        <a href="https://www.youtube.com/watch?v=KPLWWIOCOOQ" target="_blank" id="btn-assistir" title="Assistir" class="btn-assistir">
+          <span class="fas fa-play"></span> Assistir
+        </a>
+      </div>
+    
+    </div>
+
+    <div class="poster-play">
+      <div>
+        <h2>Halo</h2>
+      </div>
+      <div>
+        <a href="modelo.html">
+        <img src="imagens/series-2.png" alt="imagem modelo poster de filme" title="imagem modelo poster de filme">
+      </a>
+      </div>
+      <div>
+        <a href="https://www.youtube.com/watch?v=5KZ3MKraNKY" target="_blank" id="btn-assistir" title="Assistir" class="btn-assistir">
+          <span class="fas fa-play"></span> Assistir
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  
+  <!-- fim elemento -->
+
+
+
+
+<br><br>
+ <!-- footer Rodapé -->
+    <footer>
+      <div class="main">
+        <div class="footer-top">
+          <nav>
+            <div class="logo">
+              <img src="imagens/VisionFlix.svg" alt="">
+            </div>
+            <ul class="list">
+              <li><a href="./index.html">Inicio</a></li>
+              <li><a href="./filmes.html">Filmes</a></li>
+              <li><a href="./series.html">Séries</a></li>
+              <li><a href="./planos/mensal.html">Preços</a></li>
+              
+            </ul>
+          </nav>
+          <hr>
+          <div class="links">
+            <div class="text-links">
+              <a href="#">Central de Ajuda</a>
+              <a href="#">Termos de Uso</a>
+              <a href="#">Privacidade</a>
+            </div>
+        
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="copyright">
+            <p>&#169; 2025 <a href="#">VisionFlix</a>. Todos Direitos reservados.</p>
+          </div>
+          
+          <div class="img">
+            <img src="images/footer-bottom-img.png" alt="">
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      new Swiper(".destaque", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+    
+
+
+
+    
+</body>
+</html>

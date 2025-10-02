@@ -1,0 +1,201 @@
+section{
+    position: relative;
+}
+
+mensal-grid, .anual-grid {
+    display: flex;
+    flex-wrap: wrap;               
+    justify-content: center;      
+    align-items: stretch; /* <- estica todos os filhos para a mesma altura */
+    border-radius: 10px;
+    
+    gap: 40px;
+    margin: auto;
+    padding: 30px 40px;
+    width: 100%;
+    max-width: 1000px;
+    color: #fff;
+}
+
+.mensal-grid {
+    align-items: stretch; /* força os cards a ocuparem a mesma altura */
+  }
+
+  .card {
+    background: #1f2630;
+    border-radius: 12px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.4);
+    transition: transform 0.2s ease;
+
+    /* mantém os cards iguais e organiza conteúdo */
+    display: flex;
+    flex-direction: column;
+}
+  
+
+.agrupar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    gap: 15px;
+  }
+  
+  .btn-plan {
+    background: #171d21;
+    color: #f5c518;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    border: 2px solid transparent;
+  }
+  
+  .btn-plan:hover {
+    background: #1f1f1f;
+    transform: scale(1.05);
+  }
+  
+  .btn-plan.ativo {
+    background: #f5c518;
+    color: #171d21;
+    border: 2px solid #f5c518;
+  }
+
+
+h1{
+    color: #fff;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+p{
+    margin: 6px 0;
+}
+
+.card {
+    background: #1f2630;
+    border-radius: 12px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.4);
+    transition: transform 0.2s ease;
+
+    display: flex;
+    flex-direction: column;
+}
+.card h2 {
+    margin-bottom: 15px;
+    color: #e2d703;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card .price {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.card button {
+    margin-top: auto; 
+    padding: 10px 20px;
+    background: #e2d703;
+    color: black;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.card button:hover {
+    background: #f4e600;
+    transform: scale(1.05);
+}
+
+/* Lista vira bloco flexível */
+.card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px;
+    text-align: left;
+
+    flex: 1; /* <- força todos os UL a terem a mesma altura */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.card ul li {
+    margin-bottom: 10px;
+    color: #ddd;
+}
+
+@media (max-width: 768px) {
+    .mensal-grid,
+    .anual-grid {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      gap: 20px;
+    }
+  
+    .card {
+      width: 90%;
+      max-width: 300px;
+      padding: 16px;
+    }
+  
+    .card h2 {
+      font-size: 1.2rem;
+    }
+  
+    .card .price {
+      font-size: 18px;
+    }
+  
+    .card ul {
+      font-size: 14px;
+    }
+  
+    .card button {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  
+    .agrupar {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    .btn-plan {
+      width: 80%;
+      justify-content: center;
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  
+    h1 {
+      font-size: 1.6rem;
+      margin-top: 20px;
+    }
+  
+    p {
+      font-size: 14px;
+    }
+  }
+
+
+
